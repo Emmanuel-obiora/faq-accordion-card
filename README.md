@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/Emmanuel-obiora/faq-accordion-card)
-- Live Site URL: [FAQ-accordion](https://your-live-site-url.com)
+- Live Site URL: [FAQ-accordion](https://emmanuel-obiora.github.io/faq-accordion-card/)
 
 ## My process
 
