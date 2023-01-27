@@ -1,0 +1,26 @@
+.image-wrapper{
+    display: flex;
+    position: relative;
+}
+
+.wraps{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+
+    &_inner{
+        background-image: url(../images/illustration-woman-online-desktop.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-left: -4rem;
+        padding: 14rem;
+    }
+}
+
+.box{
+    position: absolute;
+    left: -8rem;
+    top: 38%;
+
+}

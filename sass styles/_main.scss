@@ -1,6 +1,9 @@
 main{
+    background: white url(../images/bg-pattern-desktop.svg) no-repeat 1260% 70%;
     margin: auto auto 0 auto;
-    background: $Light-grayish-blue;
-    display: flex;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    height: 509px;
+    width: 920px;
+    border-radius: 20px;
 }

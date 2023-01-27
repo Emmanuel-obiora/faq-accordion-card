@@ -1,0 +1,68 @@
+.faq-section{
+    display: flex;
+    flex-direction: column;
+    margin: 4rem;
+    color: $Dark-grayish-blue;
+    justify-content: center;
+
+    &-head{
+        color: $Very-dark-desaturated-blue;
+        font-size: 30px;
+        margin-bottom: 2rem;
+    }
+
+    &-answer{
+        display: none;
+        font-size: 13px;
+        color: $Dark-grayish-blue;
+        padding: .5rem 0;
+    }
+}
+
+.question-section{
+    display: grid;
+    row-gap: 1.2rem;
+
+    &_each{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        &-head{
+            color: $Dark-grayish-blue;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        &-head:hover{
+            color: $Soft-red;
+        }
+
+        &-image{
+            cursor: pointer;
+        }
+    }
+}
+
+.horizon{
+    color: $Dark-grayish-blue;
+    margin-top: 1rem;
+}
+
+// toggling the hidden and flipping elements using javascript and css
+.active .faq-section-answer{
+    display: block;
+    transition: all .3s ease-in;
+}
+
+.active .question-section_each-image{
+    transform: rotate(180deg);
+    transition: all .3s ease-in;
+}
+
+.active .question-section_each-head{
+    color: $Very-dark-desaturated-blue;
+    font-weight: 700;
+    font-size: 16px;
+}

@@ -13,6 +13,102 @@ body {
   background: linear-gradient(to bottom, hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
 }
 
+main {
+  background: white url(../images/bg-pattern-desktop.svg) no-repeat 1260% 70%;
+  margin: auto auto 0 auto;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  height: 509px;
+  width: 920px;
+  border-radius: 20px;
+}
+
+.image-wrapper {
+  display: flex;
+  position: relative;
+}
+
+.wraps {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+.wraps_inner {
+  background-image: url(../images/illustration-woman-online-desktop.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-left: -4rem;
+  padding: 14rem;
+}
+
+.box {
+  position: absolute;
+  left: -8rem;
+  top: 38%;
+}
+
+.faq-section {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem;
+  color: hsl(240deg, 6%, 50%);
+  justify-content: center;
+}
+.faq-section-head {
+  color: hsl(238deg, 29%, 16%);
+  font-size: 30px;
+  margin-bottom: 2rem;
+}
+.faq-section-answer {
+  display: none;
+  font-size: 13px;
+  color: hsl(240deg, 6%, 50%);
+  padding: 0.5rem 0;
+}
+
+.question-section {
+  display: grid;
+  row-gap: 1.2rem;
+}
+.question-section_each {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.question-section_each-head {
+  color: hsl(240deg, 6%, 50%);
+  font-size: 15px;
+  cursor: pointer;
+}
+.question-section_each-head:hover {
+  color: hsl(14deg, 88%, 65%);
+}
+.question-section_each-image {
+  cursor: pointer;
+}
+
+.horizon {
+  color: hsl(240deg, 6%, 50%);
+  margin-top: 1rem;
+}
+
+.active .faq-section-answer {
+  display: block;
+  transition: all 0.3s ease-in;
+}
+
+.active .question-section_each-image {
+  transform: rotate(180deg);
+  transition: all 0.3s ease-in;
+}
+
+.active .question-section_each-head {
+  color: hsl(238deg, 29%, 16%);
+  font-weight: 700;
+  font-size: 16px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
