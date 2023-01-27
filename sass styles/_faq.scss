@@ -5,10 +5,24 @@
     color: $Dark-grayish-blue;
     justify-content: center;
 
+    @media(max-width: 64rem){
+        margin: 2rem;
+    }
+
+    @media (max-width: 37.5rem){
+        margin: 1rem;
+    }
+
     &-head{
         color: $Very-dark-desaturated-blue;
         font-size: 30px;
         margin-bottom: 2rem;
+
+        @media (max-width: 37.5rem){
+            text-align: center;
+            margin-top: .3rem;
+            margin-bottom: 1.5rem;
+        }
     }
 
     &-answer{
@@ -16,12 +30,20 @@
         font-size: 13px;
         color: $Dark-grayish-blue;
         padding: .5rem 0;
+
+        @media (max-width: 37.5rem){
+            font-size: 12px
+        }
     }
 }
 
 .question-section{
     display: grid;
     row-gap: 1.2rem;
+
+    @media (max-width: 37.5rem){
+        row-gap: 1rem
+    }
 
     &_each{
         display: flex;
@@ -33,6 +55,10 @@
             color: $Dark-grayish-blue;
             font-size: 15px;
             cursor: pointer;
+
+            @media (max-width:37.5rem){
+                font-size: 13px;
+            }
         }
 
         &-head:hover{
@@ -47,7 +73,7 @@
 
 .horizon{
     color: $Dark-grayish-blue;
-    margin-top: 1rem;
+    margin-top: .8rem;
 }
 
 // toggling the hidden and flipping elements using javascript and css
@@ -65,4 +91,8 @@
     color: $Very-dark-desaturated-blue;
     font-weight: 700;
     font-size: 16px;
+
+    @media (max-width: 37.5rem){
+        font-size: 14px;
+    }
 }

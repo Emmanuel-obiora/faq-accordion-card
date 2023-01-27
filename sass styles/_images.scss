@@ -7,20 +7,43 @@
     position: relative;
     display: flex;
     overflow: hidden;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 37.5rem){
+        overflow: visible;
+    }
 
     &_inner{
-        background-image: url(../images/illustration-woman-online-desktop.svg);
+        background: url(../images/illustration-woman-online-desktop.svg) no-repeat top center;
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
         margin-left: -4rem;
         padding: 14rem;
+
+        @media(max-width: 64rem){
+            background-size: 80%;
+        }
+
+        @media (max-width:37.5rem){
+            background: url(../images/illustration-woman-online-mobile.svg);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            margin: -6.2rem auto 0 3rem;
+            padding: 0 14rem 10.7rem 0;
+        }
     }
 }
 
 .box{
     position: absolute;
     left: -8rem;
-    top: 38%;
+    top: 43%;
+
+    @media (max-width: 37.5rem){
+        display: none;
+    }
 
 }
