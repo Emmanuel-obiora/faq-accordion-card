@@ -56,16 +56,3 @@ questions.forEach((question) =>
         }
     })
 );
-
-// code to flip the down arrow up and vice-versa
-var state = false;
-function toggle(){
-    if(state){
-        document.getElementById("dropDown").classList.add('flip');
-        state = false;
-    }
-    else {
-        document.getElementById("dropDown").classList.remove('flip');
-        state = true;
-    }
-}
